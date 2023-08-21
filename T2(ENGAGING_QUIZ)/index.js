@@ -2,6 +2,7 @@ init();
 test();
 
 
+
 function init(){
     qnumber=[1,2,3,4];
     quesions = ["one","two","three","four"];
@@ -86,7 +87,10 @@ function submit_quiz(){
         show_answer(i);
     });
 
-    document.getElementById("feedback").innerHTML='Total Points = ' + calculate_result();
+    
+
+
+    report();
 }
 
 function calculate_result(){
@@ -107,4 +111,37 @@ function show_answer(i){
         else if(label.id == answers[i]){label.style.backgroundColor="lime"}
         else {label.style.backgroundColor="white"}
     }
+    if(usr_ans[i].value==answers[i]){
+        document.getElementById("feedback").style.color="green";
+        document.getElementById("feedback").innerHTML="Correct Answer! You got 1 point";
+    }
+    else{
+        document.getElementById("feedback").style.color="red";
+        document.getElementById("feedback").innerHTML="Wrong Answer! You got 0 points";
+    }
+}
+
+function report(){
+    document.getElementById("test_page").style.visibility="hidden";
+
+    const htag = document.createElement("h2");
+    htag.innerHTML="You've scored "+calculate_result()+" out of "+quesions.length+"!";
+    
+
+    const but = document.createElement("button");
+    text = document.createTextNode("View Answers");
+    but.appendChild(text);
+    document.getElementById("report").append(htag,but);
+
+    but.onclick=function(){
+        document.getElementById("submit").innerHTML="View ScoreCard";
+        document.getElementById("test_page").style.visibility="visible";
+        document.getElementById("report").removeChild(htag);
+        document.getElementById("report").removeChild(but);
+        
+    };
+}
+
+function generate_report(){
+    document.getElementById("report").ap
 }
