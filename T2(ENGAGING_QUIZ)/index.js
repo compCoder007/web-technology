@@ -7,11 +7,11 @@ function startQuiz(){
     welcome();
 
     quesions = [
-        "Who is known as 'Run Machine' in Indian cricket?",
-        "India's largest city by Population",
-        "India's National Aquatic Animal",
-        "Indian Standard Time is",
-        "What are the dimensions of Indian Flag?"        
+        "1. Who is known as 'Run Machine' in Indian cricket?",
+        "2. India's largest city by Population",
+        "3. India's National Aquatic Animal",
+        "4. Indian Standard Time is",
+        "5. What are the dimensions of Indian Flag?"        
     ];
     answers = ['C','B','A','B','A'];
     options = {
