@@ -1,0 +1,18 @@
+questions = [
+        ["Who is known as 'Run Machine' in Indian cricket?",
+            ['Sachin Tendulkar','M S Dhoni','Virat Kohli','Yuvaraj Singh']
+        ],
+        ["India's largest city by Population",
+            ['Delhi','Mumbai','Chennai','Pune']    
+        ],
+        ["India's National Aquatic Animal",
+            ['River Dolphin','Crocodile','Katla Fish','Green Frog']    
+        ],
+        ["Indian Standard Time is",
+            ['+06:30','+05:30','-05:15','+05:00']    
+        ],
+        ["What are the dimensions of Indian Flag?",
+            ['900x600','1080x720','600x400','1360x1290']    
+        ]
+
+    ]
