@@ -59,7 +59,7 @@ button {
     margin-bottom: 20px;
 }
 
-label {
+#test_page label {
     display: block;
     background-color: #fff;
     color: #222;
@@ -88,4 +88,9 @@ input[type="radio"] {
 }
 #report {
     text-align: center;
+}
+
+#user_id h4 {
+    display: inline;
+    color: #001e4d;
 }

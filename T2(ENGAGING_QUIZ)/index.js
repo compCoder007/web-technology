@@ -98,6 +98,11 @@ function welcome(){
         
         document.getElementById("test_page").style.display="";
         document.getElementById("report").style.display="none";
+        document.getElementById("user_id").style.textAlign="left";
+        document.getElementById("userid").innerHTML = document.getElementById("username").value;
+        document.getElementById("userno").innerHTML = document.getElementById("regd").value;
+        document.getElementById("username").remove();
+        document.getElementById("regd").remove();
         document.getElementById("report").removeChild(htag);
         document.getElementById("report").removeChild(but);
         
@@ -179,6 +184,7 @@ function show_answer(current_index){
 
 function report(){
     
+    document.getElementById("user_id").style.textAlign="center";
     document.getElementById("report").style.display="";
     document.getElementById("test_page").style.display="none";
     
@@ -196,7 +202,8 @@ function report(){
     document.getElementById("report").append(htag,but);
 
     but.onclick=function(){
-        
+
+        document.getElementById("user_id").style.textAlign="left";
         document.getElementById("test_page").style.display="";
         document.getElementById("submit").innerHTML="View ScoreCard";
         document.getElementById("submit").style.width="200px";

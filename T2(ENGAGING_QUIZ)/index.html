@@ -10,28 +10,44 @@
 
     <div id="quiz">
 
-        <h1>Engaging Quiz</h1>
+        <h1>VFSTR Quiz</h1>
+        <div id="user_id" align="center">
+            <br><br>
+            <h4 id="usrname">Username : </h4>
+            <input type="text" id="username">
+            <label id="userid"></label><br><br>
+            
+            <h4 id="roll">RegdNo: </h4>
+            <input type="text" id="regd">
+            <label id="userno"></label><br>
+        </div>
 
         <div id="report" class="quiz"></div>
+        
 
         <div id="test_page" class="quiz">
             <form>
-                
                 <h2 id="question"></h2><br>
-                <input type="radio" id="r1" name="option" value="A"><label class="radio" for="r1" id="A"></label><br>
-                <input type="radio" id="r2" name="option" value="B"><label class="radio" for="r2" id="B"></label><br>
-                <input type="radio" id="r3" name="option" value="C"><label class="radio" for="r3" id="C"></label><br>
-                <input type="radio" id="r4" name="option" value="D"><label class="radio" for="r4" id="D"></label><br>
+                <input type="radio" id="r1" name="option" value="A">
+                <label class="radio" for="r1" id="A"></label><br>
+
+                <input type="radio" id="r2" name="option" value="B">
+                <label class="radio" for="r2" id="B"></label><br>
+
+                <input type="radio" id="r3" name="option" value="C">
+                <label class="radio" for="r3" id="C"></label><br>
+
+                <input type="radio" id="r4" name="option" value="D">
+                <label class="radio" for="r4" id="D"></label><br>
+
                 <h3 id="feedback"></h3>
                 <button class="form" id="reset" type="reset">clear response</button><br>
             </form>
+
             <button id="previous">PREVIOUS</button>
             <button id="next">NEXT</button><br>
-
-            <div id="se">
-                <button id="submit">SUBMIT</button>
-                <button id="exit">EXIT</button>
-            </div>
+            <button id="submit">SUBMIT</button>
+            <button id="exit">EXIT</button>
             
         </div>
 
